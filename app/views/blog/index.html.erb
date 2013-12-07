@@ -1,0 +1,13 @@
+<h1>My Blog</h1>
+
+<% @posts.each do |post| %>
+	<div class="panel panel-warning">
+		<div class="panel-heading">
+			<h2><%= link_to post.title, post %></h2>
+			<p>By Pete on <%= post.created_at.to_date %></p>
+		</div>
+		<div class="panel-body">
+			<p><%= post.content %></p>
+		</div>
+	</div>
+<% end %>

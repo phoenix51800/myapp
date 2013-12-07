@@ -1,0 +1,12 @@
+<h1><%= @post.title %></h1>
+  
+<p><%= @post.content %></p>
+<hr>
+
+<% if user_signed_in? %>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<% end %>
+
+<hr>
+<%= render 'comments/form' %>

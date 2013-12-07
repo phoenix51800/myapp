@@ -1,4 +1,323 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+<div class="container">
+      <h1 id="title">Peter Argent<h1>
+
+      <div class="row">
+        <a href="#profile" data-toggle="modal"><div class="box span2 green">
+          <i class="icon-user icon-white icon-large" style="margin-top: 50px;"></i><br />
+          <span class="box-text">Professional Profile</span>
+        </div></a>
+
+        <a href="#technical" data-toggle="modal"><div class="box span2 blue">
+          <i class="icon-beaker icon-white icon-large" style="margin-top: 50px;"></i><br />
+          <span class="box-text">Technical Skills</span>
+        </div></a>
+
+        <a href="#career" data-toggle="modal"><div class="box span4 purple">
+          <i class="icon-briefcase icon-white icon-large" style="margin-top: 50px;"></i><br />
+          <span class="box-text">Career History</span>
+        </div></a>
+
+        <a href="#web" data-toggle="modal"><div class="box span4 red">
+          <i class="icon-globe icon-white icon-large" style="margin-top: 50px;"></i><br />
+          <span class="box-text">Web Development</span>
+        </div></a>
+
+      </div>
+      <div class="row">
+        <a href="#education" data-toggle="modal"><div class="box span2 purple">
+        <i class="icon-book icon-white icon-large" style="margin-top: 50px;"></i><br />
+        <span class="box-text">Education</span>
+      </div></a>
+
+        <div class="box span2 purple me">
+        </div>
+
+        <a href="#interests" data-toggle="modal"><div class="box span4 green">
+          <i class="icon-plane icon-white icon-large" style="margin-top: 50px;"></i><br />
+          <span class="box-text">Interests</span>
+        </div></a>
+
+        <a href="#contact" data-toggle="modal"><div class="box span4 orange">
+          <i class="icon-comments-alt icon-white icon-large" style="margin-top: 50px;"></i><br />
+          <span class="box-text">Get in Touch</span>
+        </div></a>
+
+      </div>
+      <div class="row">
+
+        <a href="#stalk" data-toggle="modal"><div class="box span4 blue">
+          <i class="icon-facebook icon-white icon-large" style="margin-top: 50px;"></i>
+          <i class="icon-twitter icon-white icon-large" style="margin-top: 50px;"></i>
+          <br />
+          <span class="box-text">Stalk Me</span>
+        </div></a>
+
+      <div class="box span4 red travel">
+          
+        </div>
+
+        
+
+        <div class="box span2 grey">
+        <i class="icon-star icon-white icon-large" style="margin-top: 50px;"></i><br />
+          <span class="box-text"><%= link_to "Blog", blog_path %></span>
+        </div>
+
+        <a href="#"><div class="box span2 blue">
+          <i class="icon-facebook icon-white icon-large" style="margin-top: 50px;"></i><br />
+          <span class="box-text">Stalk Me</span>
+        </div></a>
+
+      </div>
+
+      <div id="profile" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header green">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Professional Profile</h3>
+        </div>
+        <div class="modal-body">
+          <p>Hi there. Here is a summary of my skills, talents and experiences.</p>
+              <p>I am:</p>
+              <ul>
+                <li><i class="icon-user"></i>A highly skilled, software professional with nine years experience working for IBM Software Group.</li>
+                <li><i class="icon-user"></i>An expert web developer with over 15 years of experience.</li>
+                <li><i class="icon-user"></i>An accomplished software trainer and education delivery manager.</li>
+                <li><i class="icon-user"></i>A successful consultant - implementing, managing and developing IBM software solutions for enterprise and goverment clients.</li>
+                <li><i class="icon-user"></i>Demonstrated ability to adapt to new teams and workplace cultures.</li>
+                <li><i class="icon-user"></i>A confident public speaker and enthusiastic team motivator.</li>
+              </ul>
+        </div>
+        <div class="modal-footer green">
+         
+        </div>
+      </div>
+
+      <div id="technical" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header blue">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Technical Skills</h3>
+        </div>
+        <div class="modal-body">
+          
+              <ul>
+                <li><i class="icon-beaker"></i>Administration of all major operating systems (Unix, Linux, Windows, Mac).</li>
+                <li><i class="icon-beaker"></i>Software development with:
+                  <ul>
+                    <li><i class="icon-beaker"></i>Java</li>
+                    <li><i class="icon-beaker"></i>Ruby on Rails</li>
+                    <li><i class="icon-beaker"></i>Javascript</li>
+                    <li><i class="icon-beaker"></i>HTML, CSS</li>
+                    <li><i class="icon-beaker"></i>XML, XForms, XPath<li>
+                  </ul>
+                </li>
+                <li><i class="icon-beaker"></i>IBM Software specialties:
+                  <ul>
+                    <li><i class="icon-beaker"></i>IBM Electronic Forms (development, deployment, integration, evangelist)</li>
+                    <li><i class="icon-beaker"></i>IBM Connections (Social software for business)</li>
+                    <li><i class="icon-beaker"></i>IBM Web Content Management</li>
+                    <li><i class="icon-beaker"></i>IBM Portal</li>
+                  </ul>
+                </li>
+                <li><i class="icon-beaker"></i>Database configuration, integration (MySQL, DB2, Oracle).</li>
+                <li><i class="icon-beaker"></i>System architecture and planning.</li>
+                <li><i class="icon-beaker"></i>LDAP configuration and integration.</li>
+                <li><i class="icon-beaker"></i>HTTP Server configuration (IBM HTTP Server, Apache).</li>
+                <li><i class="icon-beaker"></i>System continuity and disaster recovery solution planning.</li>
+              </ul>
+        </div>
+        <div class="modal-footer blue">
+          
+        </div>
+      </div>
+
+      <div id="career" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header purple">
+
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Career History</h3>
+        </div>
+        <div class="modal-body">
+          <p>While still in my second year at university (2002), I was accepted into a special programme where I worked full time for IBM during the year and completed my IT degree at summer school. After completing my degree in 2005, I was hired as a full time employee by IBM. Please read on for details of the different roles I held.</p>
+          
+          <p><b>Dates: March 2003 - June 2012</b></p>
+
+          <p><b>IBM - Software Group (Lotus)</b></p>
+          <hr>
+          <p><b>Role: Senior Software Consultant - Lotus (September 2007 - June 2012)</b></p>
+
+          <p>A complex role where I performed a variety of duties including:</p>
+          <ul class="text">
+            <li><i class="icon-briefcase"></i>Requirements gathering, work effort estimation and statement of work production for small to large software development and deployment projects.</li>
+            <li><i class="icon-briefcase"></i>Implementing enterprise server and desktop software in large corporations and government agencies, including WebSphere Portal, IBM Forms, IBM Web Content Management.</li>
+            <li><i class="icon-briefcase"></i>Configuring software to clients' requirements and environments including integrating IBM Software with LDAP and database systems.</li>
+            <li><i class="icon-briefcase"></i>Implementation and software testing.</li>
+            <li><i class="icon-briefcase"></i>Consulting with clients on best practices for IBM Form implementations.</li>
+            <li><i class="icon-briefcase"></i>Creating instant rapport with client teams to enable a productive working environment and trust.</li>
+            <li><i class="icon-briefcase"></i>Maintenance of client relationships over the long term to discover new project opportunities.</li>
+          </ul>
+
+          <p><b>Achievements</b></p>
+          <ul class="text">
+            <li><i class="icon-briefcase"></i>Conducted the migration of an enterprise clusted portal infrastructure (WebSphere Portal) from an outdated version to the current version for a state government agency. This included the installation of Portal 7 into  new clustered environments (Dev, Test, Staging, Production) and the transfer of all data, content and themes as well as configuration with LDAP, databases and other backend systems.</li>
+            <li><i class="icon-briefcase"></i>Implemented an electronic forms solution for a federal government agency from project inception through solution design, software installation/environment build, integration with bank-end systems, design and development of electronic forms, testing, training end-users and support.</li>
+            <li><i class="icon-briefcase"></i>Performed a successful upgrade of the electronic forms infrastructure for an insurance organisation based in Melbourne with the assistance from IBM colleagues based in Canada.</li>
+            <li><i class="icon-briefcase"></i>Presented four hands-on lab sessions for an IBM software conference in 2010.</li>
+          </ul>
+
+          <hr>
+
+          <p><b>Role: Software Technical Presales Consultant - Lotus (March 2005 - September 2007)</b></p>
+
+          <p>In this position my main responsibilities included:</p>
+          <ul class="text">
+            <li><i class="icon-briefcase"></i>Worked closely with the sales team to achieve company targets and grow the Lotus business in Australia.</li>
+            <li><i class="icon-briefcase"></i>Built proof of concept systems and environments using IBM and Lotus software to demonstrate the value proposition to clients.</li>
+            <li><i class="icon-briefcase"></i>Delivered training to internal employees as well as business partners to educate them on the latest offerings from Lotus Software, including Web Content Management, WebSphere Portal and Lotus Forms.</li>
+          </ul>
+
+          <p><b>Achievements</b></p>
+          <ul class="text">
+            <li><i class="icon-briefcase"></i>In 2006, I delivered over 40 classes of Lotus Notes training to 400 IBM employees across Australia and New Zealand including the IBM Software Group senior management team to assist in improving their skills and productivity. The Australian Director of Human Resources for IBM awarded me for my successful production and managmenet of this initiative.</li>
+            <li><i class="icon-briefcase"></i>I managed the WebSphere Portal User Group in Sydney, Melbourne and Canberra. The user groups experienced continued growth in attendance from the Portal user community and I received 2 recognition awards for my involvement</li>
+            <li><i class="icon-briefcase"></i>I designed and built a sales tool in the form of an Information Kit CD for use by the Lotus sales team and IBM business partners.</li>
+          </ul>
+          <hr>
+          <p><b>Role: Enablement Coordinator - IBM Software Group (March 2004 - March 2005)</b></p>
+
+          <p>I was responsible for:</p>
+          <ul class="text">
+            <li><i class="icon-briefcase"></i>Planning training events for sales and technical presales professionals across all IBM software brands and for IBM business partners.</li>
+            <li><i class="icon-briefcase"></i>Consulting with brand leaders and sales managers, I prioritised the training requirements that were identified by conducting needs analysis skills audits.</li>
+            <li><i class="icon-briefcase"></i>Working with subject matter experts from around the world and external training providers to produce training programs such as technical workshops, sales methodology classes, presentation/public speaking courses and productivity improvement sessions.</li>
+          </ul>
+          <p><b>Achievements</b></p>
+
+          <ul class="text">
+            <li><i class="icon-briefcase"></i>I produced and delivered training held monthly at lunch times via web conference for the busy IBM sales team in an effort to minimise their time away from clients.</li>
+            <li><i class="icon-briefcase"></i>I coordinated with other enablement teams from across Asia Pacific as well as the world wide IBM enablement team, sharing resources, programs and ideas to successfully achieve the outcomes set by the enablement executives.</li>
+            <li><i class="icon-briefcase"></i>I received a recognition award for the successful coordination of a week long training conference for IBM sales professionals.</li>
+          </ul>
+          <hr>
+          <p><b>Role: Softare Systems Tester - IBM (March 2003 - March 2004)</b></p>
+
+          <p>My first position at IBM required that I write and execute test plans for large projects for a major telecommunications client as a part of a larger team. I quickly became a team leader, working closely with the test manager, development team and project manager on a six month engagement.</p>
+        </div>
+        <div class="modal-footer purple">
+          
+        </div>
+      </div>
+
+      <div id="web" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header red">
+
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Web Development</h3>
+        </div>
+        <div class="modal-body">
+          <p>Listed below are two of my most recent web development projects for local businesses.</p>
+          <p><a href="http://www.osteohs.com.au" target="_blank"><img src="img/osteo.jpg" style="align:center"></a></p>
+          <p><a href="http://www.studeioevolutionfitness.com" target="_blank"><img src="img/fitness.jpg"></a></p>
+
+        </div>
+        <div class="modal-footer red">
+          
+        </div>     
+     </div>
+     <div id="education" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header purple">
+
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Web Development</h3>
+        </div>
+        <div class="modal-body">
+          <p><b>Major Studies</b></p>
+          <ul>
+              <li><i class="icon-book"></i><b>Bachelor of Information Technology</b><br /> Griffith University, Australia<br /> February 2001 - November 2005</li>
+              <li><i class="icon-book"></i><b>Secondary School</b><br /> Mt Lawley High School<br /> Perth, Western Australia</li>
+            </ul>
+            
+            <p><b>Professional Studies</b></p>
+            <ul>
+              <li><i class="icon-book"></i><b>Development of Portlets for WebSphere Portal,</b><br />IBM Education, Sydney - January 2011</li>
+              <li><i class="icon-book"></i><b>Creating Web Sites with IBM Web Content Management,</b><br />IBM Education, Sydney - July 2009</li>
+              <li><i class="icon-book"></i><b>Administration of WebSphere Application Server,</b><br />IBM Education, Sydney - January 2008</li>
+              <li><i class="icon-book"></i><b>Deployment and Administration of WebSphere Portal,</b><br />IBM Education, Sydney - December 2007</li>
+              <li><i class="icon-book"></i><b>Lotus Top Gun (Software Sales),</b><br />IBM Education, Singapore - July 2007</li>
+              <li><i class="icon-book"></i><b>Lotus Technical Conference,</b><br />IBM Education, Sydney - January 2011</li>
+              <li><i class="icon-book"></i><b>Development of Portlets for WebSphere Portal,</b><br />Lotus Education, Melbourne - February 2007</li>
+              <li><i class="icon-book"></i><b>Global Sales School,</b><br />IBM Sales Education, Sydney - November 2006</li>
+              <li><i class="icon-book"></i><b>Consultative Selling,</b><br />IBM Sales Education, Melbourne - November 2006</li>
+              <li><i class="icon-book"></i><b>Winning Presentations,</b><br />IBM Sales Education, Melbourne - October 2005</li>
+            </ul>
+          </div>
+          <div class="modal-footer purple">
+        </div>     
+     </div>
+     <div id="interests" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header green">
+
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Interests</h3>
+        </div>
+        <div class="modal-body">
+          <p>Some of my many interests:</p>
+          <ul>
+            <li><i class="icon-plane"></i>Swimming</li>
+            <li><i class="icon-plane"></i>Cycling</li>
+            <li><i class="icon-plane"></i>Photography</li>
+            <li><i class="icon-plane"></i>Foreign/arthouse films</li>
+            <li><i class="icon-plane"></i>Travel</li>
+            <li><i class="icon-plane"></i>Technology/gadgets</li>
+            <li><i class="icon-plane"></i>Entrepreneurship</li>
+            <li><i class="icon-plane"></i>Reddit</li>
+            <li><i class="icon-plane"></i>Social networking</li>
+          </ul>
+
+        </div>
+        <div class="modal-footer green">
+          
+        </div>     
+     </div>
+
+     <div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header orange">
+
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Get in Touch</h3>
+        </div>
+        <div class="modal-body">
+          <p>I can be contacted in the following ways:</p>
+          <ul>
+            <li><i class="icon-world"></i><a href="http://thecoderfactory.com" target="_blank">The Coder Factory</a></li>
+            <li><i class="icon-phone"></i>+61 402 180 512</li>
+            <li><i class="icon-envelope"></i>peter.argent@gmail.com</li>
+            
+          </ul>
+
+        </div>
+        <div class="modal-footer orange">
+          
+        </div>     
+     </div>
+
+     <div id="stalk" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header blue">
+
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Stalk Me</h3>
+        </div>
+        <div class="modal-body">
+          <p>I can be stalked in the following ways:</p>
+          <ul>
+            <li><i class="icon-facebook"></i><a href="https://www.facebook.com/pete.argent" target="_blank">https://www.facebook.com/pete.argent</a></li>
+            <li><i class="icon-twitter"></i><a href="https://twitter.com/pedrogrande" target="_blank">@pedrogrande</a></li>
+            <li><i class="icon-linkedin"></i><a href="http://www.linkedin.com/in/peterargent" target="_blank">LinkedIn</a><li>
+            <li><i class="icon-google-plus"></i><a href="https://plus.google.com/100730085156302453180" target="_blank">Google+</a><li>  
+            <li><i class="icon-github"></i><a href="https://github.com/pedrogrande" target="_blank">Github</a><li>  
+          </ul>
+
+        </div>
+        <div class="modal-footer blue">
+          
+        </div>     
+     </div>

@@ -1,0 +1,118 @@
+
+
+#title{
+  background-image: url(../img/pic.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height:80px;
+  width: 400px;
+  padding-left: 100px;
+  padding-top: 20px;
+  color: #fff;
+
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.box {
+  
+  height: 140px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+
+}
+
+.box-text {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.box h2 {
+  color: white;
+  text-align: center;
+}
+
+.span4 {
+  width: 290px;
+}
+
+.green {
+  background-color: #3fb618;
+}
+
+.orange {
+  background-color: #ff7518;
+}
+
+.red {
+  background-color: #ff0039;
+}
+
+.purple {
+  background-color: #9954bb;
+}
+
+.black {
+  background-color: #000;
+}
+
+.grey {
+  background-color: #dfdfdf;
+}
+
+.blue {
+  background-color: #2876ed;
+}
+
+h3#myModalLabel {
+  color: white ;
+}
+
+.modal-body p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-body ul {
+  font-size: 16px;
+  
+  list-style: none;
+  margin-left: 1em;
+  padding-left: 2em;
+  text-indent: -1.5em;}
+
+.modal-body ul li {
+  padding-bottom: 10px;
+}
+
+.modal-footer {
+  border-radius: 0;
+}
+
+.btn {
+  background-color: #fff ;
+  color: #080808;
+}
+
+.me {
+  background-image: url(../img/pic3.jpg);
+  background-repeat: no-repeat;
+
+
+}
+
+.travel {
+  background-image: url(../img/cinque.jpg);
+  background-repeat: no-repeat;
+}
